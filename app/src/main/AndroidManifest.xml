@@ -27,10 +27,6 @@
             android:name=".activity.ListMusicsActivity"
             android:label="@string/list_musics">
         </activity>
-        <activity
-            android:name=".activity.BuyMusicActivity"
-            android:label="@string/buy_musics">
-        </activity>
     </application>
 
 </manifest>

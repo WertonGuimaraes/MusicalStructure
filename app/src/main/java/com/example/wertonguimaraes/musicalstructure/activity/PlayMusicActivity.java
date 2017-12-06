@@ -11,7 +11,6 @@ import com.example.wertonguimaraes.musicalstructure.R;
 public class PlayMusicActivity extends AppCompatActivity {
 
     private Button mListMusics;
-    private Button mBuyMusics;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,12 +22,10 @@ public class PlayMusicActivity extends AppCompatActivity {
 
     private void mInitView() {
         mListMusics = findViewById(R.id.list_musics_bt);
-        mBuyMusics = findViewById(R.id.buy_musics_bt);
     }
 
     private void mInitButtonListeners() {
         mListMusics.setOnClickListener(mOpenNewActivity);
-        mBuyMusics.setOnClickListener(mOpenNewActivity);
     }
 
     private View.OnClickListener mOpenNewActivity = new View.OnClickListener() {
@@ -40,9 +37,6 @@ public class PlayMusicActivity extends AppCompatActivity {
                     break;
                 case R.id.list_musics_bt:
                     startNewActivity(ListMusicsActivity.class);
-                    break;
-                case R.id.buy_musics_bt:
-                    startNewActivity(BuyMusicActivity.class);
                     break;
                 default:
                     break;

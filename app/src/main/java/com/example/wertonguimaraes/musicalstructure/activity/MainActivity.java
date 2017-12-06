@@ -12,7 +12,6 @@ public class MainActivity extends AppCompatActivity {
 
     private Button mPlayMusic;
     private Button mListMusics;
-    private Button mBuyMusics;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,13 +25,11 @@ public class MainActivity extends AppCompatActivity {
     private void mInitView() {
         mPlayMusic = findViewById(R.id.play_music_bt);
         mListMusics = findViewById(R.id.list_musics_bt);
-        mBuyMusics = findViewById(R.id.buy_musics_bt);
     }
 
     private void mInitButtonListeners() {
         mPlayMusic.setOnClickListener(mOpenNewActivity);
         mListMusics.setOnClickListener(mOpenNewActivity);
-        mBuyMusics.setOnClickListener(mOpenNewActivity);
     }
 
     private View.OnClickListener mOpenNewActivity = new View.OnClickListener() {
@@ -44,9 +41,6 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.list_musics_bt:
                     startNewActivity(ListMusicsActivity.class);
-                    break;
-                case R.id.buy_musics_bt:
-                    startNewActivity(BuyMusicActivity.class);
                     break;
                 default:
                     break;

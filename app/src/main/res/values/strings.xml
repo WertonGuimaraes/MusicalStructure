@@ -6,5 +6,8 @@
     <string name="music_is_playing">%1$s is playing now.</string>
     <string name="song_name">Song %1$d</string>
     <string name="song_artist">Artist %1$d</string>
+    <string name="song_name_playing">Yellow</string>
+    <string name="song_artist_playing">Coldplay</string>
+    <string name="example_time">0:00/3:25</string>
 
 </resources>

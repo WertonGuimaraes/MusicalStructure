@@ -18,7 +18,6 @@ import java.util.List;
 public class ListMusicsActivity extends AppCompatActivity {
 
     private Button mPlayMusic;
-    private Button mBuyMusics;
     private RecyclerView mRvMusic;
 
     @Override
@@ -32,13 +31,11 @@ public class ListMusicsActivity extends AppCompatActivity {
 
     private void mInitView() {
         mPlayMusic = findViewById(R.id.play_music_bt);
-        mBuyMusics = findViewById(R.id.buy_musics_bt);
         mRvMusic = findViewById(R.id.recycler_view);
     }
 
     private void mInitButtonListeners() {
         mPlayMusic.setOnClickListener(mOpenNewActivity);
-        mBuyMusics.setOnClickListener(mOpenNewActivity);
     }
 
     private void populateMusicListView() {
@@ -63,9 +60,6 @@ public class ListMusicsActivity extends AppCompatActivity {
                     break;
                 case R.id.list_musics_bt:
                     startNewActivity(ListMusicsActivity.class);
-                    break;
-                case R.id.buy_musics_bt:
-                    startNewActivity(BuyMusicActivity.class);
                     break;
                 default:
                     break;
